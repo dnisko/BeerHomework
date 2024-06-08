@@ -1,0 +1,36 @@
+.pointerCursor:hover{
+	cursor: pointer;
+}
+
+.rotate-90{
+	transform: rotate(90deg);
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loading {
+    border-bottom: 16px solid #92cbf8;
+    /* Light grey */
+    border-top: 16px solid #3498db;
+    /* Blue */
+    border-right: 16px solid #3498db;
+    /* Blue */
+    border-left: 16px solid #3498db;
+    /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+#spiner {
+    margin: 100px auto auto auto;
+}
